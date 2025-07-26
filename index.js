@@ -24,7 +24,7 @@ $("#todo-list").on("click", ".close-btn", function(e) {
 });
 
 $("#todo-list").on("click", "li", function() {
-    $(this).css("text-decoration", "line-through");
+    $(this).toggleClass("completed");
 });
 
 $("#clear-tasks").on("click", function(){
